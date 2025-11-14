@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Order Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Food Order Management System</h1>
+
+    <div>
+        <h2>Place New Order</h2>
+        <label>Food Name: <input type="text" id="foodName"></label>
+        <label>Quantity: <input type="number" id="quantity" min="1" value="1"></label>
+        <button onclick="addOrder()">Add Order</button>
+    </div>
+
+    <div>
+        <h2>Orders in Queue</h2>
+        <ul id="queueList"></ul>
+    </div>
+
+    <div>
+        <h2>Completed Orders</h2>
+        <ul id="doneList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
 
